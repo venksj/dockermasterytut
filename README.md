@@ -78,6 +78,22 @@ Once the application is started, you can go to your browser and go to url `http:
 
 If you are getting this output, your application is running correctly.
 
+## Packaging
+
+Application can be compiled and packed in a jar using the below command:
+```shell
+./mvnw clean package
+```
+
+This command outputs the jar inside `target` folder with name `dockermastery-0.0.1-SNAPSHOT.jar`.
+
+To run this jar, you can use below command:
+
+```shell
+java -jar dockermastery-0.0.1-SNAPSHOT.jar
+```
+Make sure your environment variables are set before running this jar. 
+
 ## Running tests
 
 This application contains unit tests that can be run by 
